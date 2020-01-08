@@ -1,0 +1,155 @@
+@media (max-width: 1150px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .activities {
+    &-grid {
+      &-item {
+        width: calc(50% - 60px);
+        margin: 20px 30px;
+        text-align: center;
+      }
+    }
+  }
+
+  .lesson {
+    &-grid {
+      &-item {
+        width: calc(50% - 60px);
+        margin: 20px 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .title {
+    padding: 0 0 20px 0;
+    margin: 0 10px 0 10px;
+  }
+
+  .btn {
+    &-main {
+      width: 280px;
+    }
+  }
+
+  .showcase {
+    min-height: 0;
+  
+    &-content {
+      padding: 5rem 1rem 0 1rem;
+    }
+  
+    &-title {
+      padding-bottom: 25px;
+    }
+  
+    &-description {
+      padding: 10px 20px 20px 0;
+    }
+  
+    &-btn {
+      padding-top: 60px;
+    }
+  }
+  
+  .activities {
+    &-grid {
+      flex-direction: column;
+      flex-wrap: wrap;
+  
+      &-item {
+        width: calc(100% - 80px);
+        margin: 15px 40px;
+  
+        h3 {
+          padding: 15px 0 10px 0;
+          color: $main-color;
+          font-size: 1.6rem;
+        }
+  
+        p {
+          padding: 15px 0;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  
+  .easydrums { 
+    &-list {
+      &-item {
+        padding: 10px 15px 10px 0;
+        margin-left: 40px;
+      }
+    }
+  }
+  
+  .lesson {
+    &-grid {
+      padding-top: 20px;
+      flex-direction: column;
+  
+      &-item {
+        width: calc(100% - 120px);
+        margin: 20px 60px;
+  
+        img {
+          width: 160px;
+        }
+  
+        h3 {
+          font-size: 1.6rem;
+        }
+  
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  
+  .strip {
+    &-content {
+      margin: 0 10px 0 10px;
+    }
+  }
+  
+  .for {
+    &-tabs {
+      padding-top: 15px;
+      margin-bottom: 15px;
+  
+      &-content {
+        width: 100%;
+      }
+    }
+  }
+  
+  
+}

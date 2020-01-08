@@ -4,6 +4,7 @@
   height: 100vh;
   position: relative;
   color: $light-color;
+  min-height: 850px;
 
   &::before {
     content: '';
@@ -281,3 +282,5 @@
   }
   
 }
+
+@import 'media';
