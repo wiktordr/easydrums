@@ -180,3 +180,66 @@ a {
     color: #333; }
   .for-tabs-content.current {
     display: inherit; }
+
+.schedule {
+  background: #bbbbbb; }
+  .schedule-content {
+    max-width: 1000px; }
+  .schedule-accordion {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+    border-top: 2px solid #f29516; }
+    .schedule-accordion-item {
+      border-bottom: 2px solid #f29516; }
+      .schedule-accordion-item h3 {
+        margin: 0;
+        padding: .8rem 0;
+        cursor: pointer;
+        font-weight: normal;
+        color: #222;
+        font-weight: 600;
+        letter-spacing: 2px; }
+        .schedule-accordion-item h3::before {
+          content: '';
+          display: inline-block;
+          height: 7px;
+          width: 7px;
+          margin-right: 1rem;
+          margin-left: .5rem;
+          vertical-align: middle;
+          border-right: 2px solid;
+          border-bottom: 2px solid;
+          transform: rotate(-45deg);
+          transition: transform .2s ease-out; }
+      .schedule-accordion-item div {
+        margin: 0;
+        padding-bottom: .8rem;
+        display: none; }
+    .schedule-accordion .is-active h3::before {
+      transform: rotate(45deg); }
+  .schedule .accordion-panel .timeline {
+    border-left: 4px solid #f29516;
+    margin: 40px 30px 40px 30px;
+    position: relative;
+    padding: 0 40px;
+    list-style: none;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1rem; }
+    .schedule .accordion-panel .timeline-item {
+      margin-bottom: 60px;
+      position: relative; }
+      .schedule .accordion-panel .timeline-item::after {
+        position: absolute;
+        display: block;
+        top: 0; }
+      .schedule .accordion-panel .timeline-item::after {
+        content: '';
+        left: -51px;
+        background: #f29516;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px; }
+      .schedule .accordion-panel .timeline-item:last-child {
+        margin-bottom: 0; }
