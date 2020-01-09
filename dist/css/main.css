@@ -15,7 +15,7 @@ body {
   padding: 4rem 0; }
 
 h1 {
-  font-size: 7rem; }
+  font-size: 6rem; }
 
 h2 {
   font-size: 2.8rem;
@@ -58,6 +58,35 @@ a {
   .btn-main:hover {
     background: #f29516;
     color: #222; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  line-height: 50px;
+  transition: all 1s;
+  z-index: 999; }
+  .navbar .menu-title {
+    float: left;
+    padding: 14px 32px; }
+    .navbar .menu-title a {
+      display: inline-block;
+      font-size: 2rem;
+      color: #f5f5f5; }
+  .navbar .menu-list {
+    float: right;
+    margin: 0;
+    padding-right: 40px; }
+    .navbar .menu-list-item {
+      display: inline-block;
+      padding: 16px 32px; }
+      .navbar .menu-list-item a {
+        text-decoration: none;
+        color: #f5f5f5;
+        font-size: 1.5rem; }
+
+.nav-dark {
+  background: #073B82;
+  opacity: 0.9; }
 
 .showcase {
   height: 100vh;
@@ -246,6 +275,9 @@ a {
       .schedule .accordion-panel .timeline-item:last-child {
         margin-bottom: 0; }
 
+.form-content {
+  margin: 0 auto 40px auto; }
+
 @media (max-width: 1150px) {
   .container {
     max-width: 700px; }
@@ -258,13 +290,27 @@ a {
     margin: 20px 30px;
     text-align: center; } }
 
+@media (max-width: 920px) {
+  .navbar {
+    line-height: 30px; }
+    .navbar .menu-title {
+      display: none; }
+    .navbar .menu-list {
+      float: none;
+      text-align: center;
+      padding-right: 0; }
+      .navbar .menu-list-item {
+        padding: 5px 15px; }
+        .navbar .menu-list-item a {
+          font-size: 1.1rem; } }
+
 @media (max-width: 800px) {
   body {
     font-size: 20px; }
   .container {
     max-width: 400px; }
   h1 {
-    font-size: 3.5rem; }
+    font-size: 3.2rem; }
   h2 {
     font-size: 2rem;
     font-weight: 300; }
@@ -277,9 +323,9 @@ a {
   .btn-main {
     width: 280px; }
   .showcase {
-    min-height: 0; }
+    min-height: 570px; }
     .showcase-content {
-      padding: 5rem 1rem 0 1rem; }
+      padding: 5.5rem 1rem 0 1rem; }
     .showcase-title {
       padding-bottom: 25px; }
     .showcase-description {

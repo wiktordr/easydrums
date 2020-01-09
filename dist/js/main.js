@@ -24,7 +24,7 @@ $(function() {
 	});
 });
 
-// Scroll
+// Nav and smooth scroll
 $('a').on('click', function(event){
   if (this.hash !==''){
     event.preventDefault();
@@ -32,8 +32,16 @@ $('a').on('click', function(event){
     const hash = this.hash;
 
     $('html, body').animate(
-      {scrollTop: $(hash).offset().top},
+      {scrollTop: $(hash).offset().top - 20},
       800
     );
   }
 });
+
+$(window).on('scroll', function() {
+  if($(window).scrollTop()) {
+    $('nav').addClass('nav-dark');
+  } else {
+    $('nav').removeClass('nav-dark');
+  }
+})

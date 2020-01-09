@@ -1,5 +1,48 @@
 @import 'utilities';
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  line-height: 50px;
+  transition: all 1s;
+  z-index: 999;
+
+  .menu{
+    &-title {
+      float: left;
+      padding: 14px 32px;
+
+      a {
+        display: inline-block;
+        font-size: 2rem;
+        color: $light-color;
+      }
+    }
+
+    &-list {
+      float: right;
+      margin: 0;
+      padding-right: 40px;
+
+      &-item {
+        display: inline-block;
+        padding: 16px 32px;
+
+        a {
+          text-decoration: none;
+          color: $light-color;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.nav-dark {
+  background: $main-color;
+  opacity: 0.9;
+}
+
 .showcase {
   height: 100vh;
   position: relative;
@@ -281,6 +324,12 @@
     }
   }
   
+}
+
+.form {
+  &-content {
+    margin: 0 auto 40px auto;
+  }
 }
 
 @import 'media';
